@@ -1,4 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    color: white;
     background: wheat;
+    background-image: url('https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fda85b8444abfb3aa604b8016b204d2c1f1563340');
+    background-size: cover;
 }
