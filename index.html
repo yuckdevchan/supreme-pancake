@@ -5,17 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Supreme Pancakes</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Supreme Pancakes | Home</title>
 </head>
+<style>
+    #image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: bounce 2s infinite;
+    }
+
+    #image2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: bounce2 2s infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        50% {
+            top: 50%;
+            left: 50%;
+        }
+        100% {
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @keyframes bounce2 {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        50% {
+            top: 70%;
+            left: 20%;
+        }
+        100% {
+            top: 30;
+            left: 10;
+        }
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: wheat;
+    background-image: url('https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fda85b8444abfb3aa604b8016b204d2c1f1563340');
+    background-size: cover;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    width: 130px;
+    height: 50px;
+    border-radius: 17px;
+}
+</style>
+<img id="image" src="https://static.vecteezy.com/system/resources/previews/020/002/870/original/pancake-graphic-clipart-design-free-png.png">
+<img id="image2" src="https://static.vecteezy.com/system/resources/previews/020/002/870/original/pancake-graphic-clipart-design-free-png.png">
+	<script>
+		var image = document.getElementById("image");
+		image.style.width = "100px"; // set the width of the image
+		image.style.height = "100px"; // set the height of the image
+
+        var image = document.getElementById("image2");
+		image.style.width = "300px"; // set the width of the image
+		image.style.height = "300px"; // set the height of the image
+
+        var dong = new Audio('mao_zedong.mp3');
+        var pipe = new Audio('pipe.mp3');
+
+        var dong_status = false
+
+        function song_button_pressed() {
+            if (dong_status == false) {
+                document.body.style.backgroundImage = "url('dong2.jpg')";
+                document.body.style.backgroundSize = "auto"
+                dong_status = true
+            } else {
+                document.body.style.backgroundImage = "url('https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fda85b8444abfb3aa604b8016b204d2c1f1563340')";
+                dong_status = false
+                document.getElementById("dong").muted = true;
+            }
+
+            pipe.play()
+            dong.play()
+        }
+
+        var clicks = 0
+var Multi = 1
+var clickMod = 1 * Multi
+
+
+function addClicker() {
+  if (clicks => 10) {
+    Multi += 1
+  } else {
+  console.log("Bad")
+}
+
+}
+function click() {
+  clicks += clickMod
+  document.getElementById("clickPara").innerHTML = clicks
+}
+	</script>
+<script src="index.js"></script>
 <body>
     <h1 style="font-size: 169px; filter: drop-shadow(7px 10px 4px black);">Supreme Pancakes</h1>
+    <br>
     <button onclick="addClicker"><b>add clicker</b></button>
     <br>
     <br>
     <button onclick="click"><b>click</b></button>
-    <h1>Your clicks: </h1>
+    <br>
+    <br>
+    <button style="width: 500px; height: 200px; font-size: 69px; background-color: red;" onclick="song_button_pressed()"><b>Mao Ze-?</b></button>
+    <h2>Your clicks: </h2>
     <p id="clickPara">heheheheha</p>
-
 </body>
 </body>
 </html>
