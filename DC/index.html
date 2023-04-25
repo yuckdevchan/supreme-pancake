@@ -1,0 +1,34 @@
+
+<html>
+<head>
+		 {
+			position: absolute;`    
+			top: 0;
+			left: 0;
+			animation: bounce 2s infinite;
+		}
+		@keyframes bounce {
+			0% {
+				top: 0;
+				left: 0;
+			}
+			50% {
+				top: 50%;
+				left: 50%;
+			}
+			100% {
+				top: 0;
+				left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<img id="image" src="https://static.vecteezy.com/system/resources/previews/020/002/870/original/pancake-graphic-clipart-design-free-png.png">
+	<script>
+		var image = document.getElementById("image");
+		image.style.width = "100px"; // set the width of the image
+		image.style.height = "100px"; // set the height of the image
+	</script>
+</body>
+</html>
