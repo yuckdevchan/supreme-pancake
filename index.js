@@ -4,10 +4,12 @@ var clickMod = 1 * Multi
 
 
 function addClicker() {
-  if clicks => 10:
-    Multi= += 1
-  else:
-    console.log("Bad")
+  if clicks => 10 {
+    Multi += 1
+  } else {
+  console.log("Bad")
+}
+
 }
 function click() {
   clicks += clickMod
