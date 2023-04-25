@@ -5,7 +5,7 @@ var clickMod = 1 * Multi
 
 function addClicker() {
   if clicks => 10:
-    Multiplyer += 1
+    Multi= += 1
   else:
     console.log("Bad")
 }
