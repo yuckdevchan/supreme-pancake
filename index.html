@@ -92,12 +92,13 @@ button {
             if (dong_status == false) {
                 document.body.style.backgroundImage = "url('dong2.jpg')";
                 document.body.style.backgroundSize = "auto"
+		document.getElementById("title").innerHTML = "Supreme Maoist China";
                 dong_status = true
             } else {
                 document.body.style.backgroundImage = "url('https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fda85b8444abfb3aa604b8016b204d2c1f1563340')";
                 dong_status = false
                 document.getElementById("dong").muted = true;
-		document.getElementById("title").innerHTML = "Supreme Maoist China";
+		document.body.style.backgroundSize = "cover"
             }
 
             pipe.play()
