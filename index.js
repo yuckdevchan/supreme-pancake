@@ -1,6 +1,7 @@
 var clicks = 0
-var clickMod = 1 * Multiplyer
-var Multiplyer = 1
+var Multi = 1
+var clickMod = 1 * Multi
+
 
 function addClicker() {
   if clicks => 10:
