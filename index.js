@@ -13,4 +13,5 @@ function addClicker() {
 }
 function click() {
   clicks += clickMod
+  document.getElementById("clickPara").innerHTML = clicks
 }
