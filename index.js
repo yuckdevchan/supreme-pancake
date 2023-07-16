@@ -10,6 +10,7 @@ var dong = new Audio('mao_zedong.mp3');
 var pipe = new Audio('pipe.mp3');
 
 var dong_status = false
+console.log("mao zedong music not playing")
 
 function do_alert() {
     alert(`Eshang pajang hongya hong tong tonge
